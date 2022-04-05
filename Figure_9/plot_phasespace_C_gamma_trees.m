@@ -35,7 +35,8 @@ end
 
 mesh(C_vec,gamma_vec,opt_b')
 ax=gca;
-ax.FontSize=14;
+set(gca,'fontsize',11)
+set(gca, 'FontName', 'Times New Roman')
 xlabel('$C$','Interpreter','Latex');
 ylabel('$\gamma$','Interpreter','Latex');
 zlabel(' $b^*$','Interpreter','Latex')
@@ -76,7 +77,8 @@ end
 
 mesh(C_vec,gamma_vec,opt_b')
 ax=gca;
-ax.FontSize=14;
+set(gca,'fontsize',11)
+set(gca, 'FontName', 'Times New Roman')
 xlabel('$C$','Interpreter','Latex');
 ylabel('$\gamma$','Interpreter','Latex');
 zlabel('$b^*$','Interpreter','Latex')
