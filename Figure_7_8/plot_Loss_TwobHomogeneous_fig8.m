@@ -4,7 +4,7 @@ close all
 Lossb1b2d1_1 = load('Twob_1_loss_twob.m');
 Lossb1b2_1 = load('Twob_1_loss_oneb.m');
 Lossb1b2d1_n = load('Twob_n_loss_twob.m');
-Lossb1b2_n = load('Twob_n_loss_twob.m');
+Lossb1b2_n = load('Twob_n_loss_oneb.m');
 
 Lossb1b2d1 = NaN(numel(Lossb1b2d1_1(:,1))+numel(Lossb1b2d1_n(:,1)), numel(Lossb1b2d1_1(1,:)));
 Lossb1b2 = NaN(numel(Lossb1b2_1(:,1))+numel(Lossb1b2_n(:,1)), numel(Lossb1b2_1(1,:)));
@@ -55,7 +55,8 @@ subplot('Position',pos2)
 %mesh(p_vec, C_vec, Loss_vec(:,:,1)', 'FaceColor', 'interp', 'FaceAlpha', '0.3');
 mesh(p_vec, C_vec, Loss_vec(:,:,1)');
 ax=gca;
-ax.FontSize=14;
+set(gca,'fontsize',11)
+set(gca, 'FontName', 'Times New Roman')
 set(gca, 'Yscale', 'log')
 xlabel('$p$','Interpreter','Latex');
 ylabel('$C$','Interpreter','Latex');
@@ -75,7 +76,8 @@ subplot('Position',pos1)
 %mesh(p_vec, C_vec, Loss_vec(:,:,2)', 'FaceColor', 'interp', 'FaceAlpha', '0.3');
 mesh(p_vec, C_vec, Loss_vec(:,:,2)');
 ax=gca;
-ax.FontSize=14;
+set(gca,'fontsize',11)
+set(gca, 'FontName', 'Times New Roman')
 set(gca, 'Yscale', 'log')
 xlabel('$p$','Interpreter','Latex');
 ylabel('$C$','Interpreter','Latex');
