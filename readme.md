@@ -1,5 +1,5 @@
 # Deep_imagination_decision_trees
-Repository containing all the C code used for paper "Deep imagination is a close to optimal policy for planning in large decision trees under limited resources"
+Repository containing all the C codes used for paper "Deep imagination is a close to optimal policy for planning in large decision trees under limited resources" and the Matlab codes to generate the figures.
 
 Codes to generate data and plot are organized in folders according to figures. Please read the readme.txt in every folder to know the code to run.
 
